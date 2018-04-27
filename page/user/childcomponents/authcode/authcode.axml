@@ -1,0 +1,5 @@
+<view>
+  会员信息
+  <button type="primary" size="defaultSize" onTap="tradePay"> tradePay </button>
+  <button type="primary" size="defaultSize" onTap="startZMVerify"> startZMVerify </button>
+</view>

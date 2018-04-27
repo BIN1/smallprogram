@@ -1,0 +1,5 @@
+<template name='ipad'>
+  <view>
+    ipad
+  </view>
+</template>

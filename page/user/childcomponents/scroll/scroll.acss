@@ -1,0 +1,14 @@
+.scroll-wrapper{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+.item{
+    display: flex;
+    height: 40px;
+    border-bottom: 1px solid #ededed;
+    justify-content: center;
+    align-items: center;
+}

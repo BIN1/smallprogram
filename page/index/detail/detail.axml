@@ -1,0 +1,10 @@
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+    <block a:for="{{imgUrls}}">
+      <swiper-item>
+        <image  onTap="toDetail" id="{{item.id}}" src="{{item.url}}" class="slide-image" mode="aspectFit"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view onTap="_getIndex">获取数据</view>
+</view>

@@ -1,0 +1,25 @@
+<import src="../template/ipad.axml" />
+<import src="../template/beat.axml" />
+<import src="../template/iphone.axml" />
+<import src="../template/mac.axml" />
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+    <block a:for="{{imgUrls}}">
+      <swiper-item>
+        <image  onTap="toDetail" id="{{item.id}}" src="{{item.url}}" class="slide-image" mode="aspectFit"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="tabItems">
+    <block a:for="{{navItems}}">
+      <view class="tab" id="{{item.id}}" onTap="toTap">
+        <view class="tabDark tabActive" a:if="{{currenPage==item.id}}" id="{{item.id}}">{{item.name}}</view>
+        <view class="tabDark" a:else id="{{item.id}}">{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+<template is='iphone' a:if="{{currenPage=='iphone'}}" data="{{iphoneDatas}}"></template>
+<template is='ipad' a:elif="{{currenPage=='ipad'}}" data="{{ipadDatas}}"></template>
+<template is='Mac' a:elif="{{currenPage=='Mac'}}" data="{{macDatas}}"></template>
+<template is='beats' a:elif="{{currenPage=='Beats'}}" data="{{beadDatas}}"></template>

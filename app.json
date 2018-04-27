@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/user/user",
+    "page/index/detail/detail",
+    "page/user/childcomponents/bill/bill",
+    "page/user/childcomponents/order/order",
+    "page/user/childcomponents/help/help",
+    "page/user/childcomponents/authcode/authcode",
+    "page/user/childcomponents/scroll/scroll",
+    "page/user/childcomponents/form/form",
+    "page/user/childcomponents/map/map",
+    "page/user/childcomponents/contact/contact",
+    "page/user/childcomponents/city/city",
+    "page/user/childcomponents/date/date"
+    
+  ],
+  "window": {
+    "enableWK": "YES",
+    "enableDSL": true,
+    "defaultTitle": "小程序",
+    "backgroundColor": "#F5F5F9",
+    "pullRefresh": true,
+    "allowsBounceVertical": true
+  },
+  "tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#108ee9",
+    "backgroundColor": "#F5F5F9",
+    "items": [
+      {
+        "pagePath": "page/index/index",
+        "icon": "image/icon_component.png",
+        "activeIcon": "image/icon_component_HL.png",
+        "name": "租赁"
+      },
+      {
+        "pagePath": "page/user/user",
+        "icon": "image/icon_API.png",
+        "activeIcon": "image/icon_API_HL.png",
+        "name": "我的"
+      }
+    ]
+  },
+  "debug": true
+}

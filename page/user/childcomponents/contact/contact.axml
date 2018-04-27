@@ -1,0 +1,29 @@
+<view>
+  <button type="primary" size="defaultSize" onTap="gePhoneContacts"> 获取手机联系人 </button>
+  <view a:if="{{phoneContact}}">
+    <view>
+      姓名：{{phoneContact.name}}
+    </view>
+    <view>
+      手机号：{{phoneContact.mobile}}
+    </view>
+  </view>
+  <button type="primary" size="defaultSize" onTap="geAliContacts"> 获取支付宝联系人 </button>
+  <view a:if="{{aliContacts}}">
+    <block a:for="{{aliContacts}}">
+      <image src="{{item.avatar}}" mode="aspectFit" />
+      <view>
+        姓名：{{item.realName}}
+      </view>
+      <view>
+        手机号：{{item.mobile}}
+      </view>
+      <view>
+        邮件：{{item.email}}
+      </view>
+      <view>
+        userId：{{item.userId}}
+      </view>
+    </block>
+  </view>
+</view>

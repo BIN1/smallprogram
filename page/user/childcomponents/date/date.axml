@@ -1,0 +1,6 @@
+<view>
+  <button type="primary" size="defaultSize" onTap="getDate"> 选择日期 </button>
+  <view a:if="{{date}}">
+    选择的日期：{{date}}
+  </view>
+</view>

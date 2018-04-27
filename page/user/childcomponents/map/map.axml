@@ -1,0 +1,5 @@
+<view>
+  <map id="map" show-location></map>
+  <button type="primary" size="defaultSize" onTap="getCenter"> 获取位置 </button>
+  <button type="primary" size="defaultSize" onTap="moveToLocation"> 移动位置 </button>
+</view>

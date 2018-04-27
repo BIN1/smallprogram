@@ -1,0 +1,23 @@
+<form onSubmit="submit" onReset="reset">
+  <view class="section">
+    <switch checked="true" name="switch"/>
+  </view>
+  <view class="section">
+    <input type="text" placeholder="请输入你的名字" auto-focus name="name"/>
+  </view>
+  <view class="section">
+    <input type="text" placeholder="请输入你的密码" name="password" password/>
+  </view>
+  <radio-group name="sex">
+    <label  a:for="{{sex}}">
+      <radio value="{{item.value}}" />{{item.name}}
+    </label>
+  </radio-group>
+  <checkbox-group name="hoppy">
+    <label a:for="{{checkitem}}">
+      <checkbox value="{{item.name}}"/>{{item.value}}
+    </label>
+  </checkbox-group>
+  <button type="primary" size="defaultSize" form-type="submit"> Button </button>
+  <button type="primary" size="defaultSize" form-type="reset"> Button </button>
+</form>

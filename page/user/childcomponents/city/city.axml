@@ -1,0 +1,11 @@
+<view>
+  <button type="primary" size="defaultSize" onTap="checkCity"> 选择城市 </button>
+  <view a:if="{{city}}">
+    <view>
+      城市：{{city.city}}
+    </view>
+    <view>
+      行政区划代码：{{city.city}}
+    </view>
+  </view>
+</view>

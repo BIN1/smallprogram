@@ -1,0 +1,9 @@
+<template name='beats'>
+  <view class="beat">
+    beats
+    <block a:for="{{beadDatas}}">
+      <view>{{item.name}}</view>
+      <view>{{item.des}}</view>
+    </block>
+  </view>
+</template>

@@ -1,0 +1,8 @@
+<view class="user">
+  <block a:for="{{navItems}}">
+      <view class="item" id="{{item.id}}" onTap="clickTap">
+        <view id="{{item.id}}">{{item.name}}</view>
+        <image id="{{item.id}}" src="../../image/arrow.png" mode="aspectFit" class="img"/>
+      </view>
+    </block>
+</view>
